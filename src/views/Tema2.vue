@@ -25,7 +25,7 @@
       .col-lg-7.my-lg-0.my-3
         .row.justify-content-start.my-4
           .col-auto
-            h5.py-2.px-3.bgt1.brad Métodos de priorización   
+            h5.py-2.px-3.bgt1.brad Factores a considerar   
         p la selección debe basarse en varios criterios, como la cantidad de datos que se espera manejar, el tipo de transacciones que se realizarán, y los requisitos de seguridad y escalabilidad. Por ejemplo, si se necesita un alto rendimiento en la consulta de grandes volúmenes de datos, una base de datos como PostgreSQL puede ser adecuada por su soporte robusto a operaciones complejas y su capacidad de manejar grandes cargas de trabajo.
       .col-lg-5.my-lg-0.my-3.j1
         img.img-a.img-t(src='@/assets/curso/temas/22.png' alt='')            
@@ -48,10 +48,10 @@
                 i.fas.fa-check-circle.color1
                 span.mb-0 #[b SQL Server:] preferido en entornos empresariales que demandan alta disponibilidad y seguridad, como un sistema de gestión de nómina de empleados.      
 
-
+    p Estos ejemplos destacan cómo la elección del DBMS debe alinearse con las necesidades específicas del proyecto, asegurando que la base de datos seleccionada pueda satisfacer los requisitos técnicos y operativos.
     Separador 
     #t_2_2.titulo-segundo.color-acento-contenido
-      h2 2.2	Formulación de algoritmos: pseudocódigo y diagramas de flujo       
+      h2 2.2 Análisis de relaciones y cardinalidades 
     p El análisis de las relaciones y las cardinalidades entre tablas es fundamental para diseñar un esquema de datos efectivo.
     .row.justify-content-start.my-4
       .col-auto
@@ -158,7 +158,8 @@
     Separador 
     #t_2_3.titulo-segundo.color-acento-contenido
       h2 2.3	Diseño de tablas y elementos        
-    p La información puede ser estructurada, no estructurada o semiestructurada, dependiendo de su organización y propósito.     
+    p El diseño adecuado de tablas ayuda a organizar los datos y facilitar su uso en aplicaciones.
+   
 
     .row.justify-content-center    
       .col-lg-9.my-lg-0.my-3
@@ -172,7 +173,7 @@
               li 
                 i.fas.fa-check-circle.color1
                 span #[b Registros:] son las filas de la tabla que representan instancias específicas de datos. Por ejemplo, un registro en una tabla de “Productos” podría contener los datos de un producto específico, como ID del producto: 123, Nombre: Lápiz HB, y Precio: 0.50 USD.  
-          div(titulo="Información no estructurada")
+          div(titulo="Tipos de llaves")
             ul.lista-ul.fa-ul
               li 
                 i.fas.fa-check-circle.color1

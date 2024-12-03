@@ -57,71 +57,71 @@
             ul.lista-ul.fa-ul
               li 
                 i.fas.fa-check-circle.color1
-                span #[b mark id (integer):] Identificador único para cada registro de calificación.
+                span #[b #[i mark id (integer):]] Identificador único para cada registro de calificación.
               li 
                 i.fas.fa-check-circle.color1
-                span #[b student id (integer):] Referencia al estudiante que recibió la calificación, se conecta con la entidad Students.
+                span #[b #[i student id (integer):]] Referencia al estudiante que recibió la calificación, se conecta con la entidad Students.
               li 
                 i.fas.fa-check-circle.color1
-                span #[b subject id (integer):] Referencia a la asignatura evaluada, se conecta con la entidad Subjects.
+                span #[b #[i subject id (integer):]] Referencia a la asignatura evaluada, se conecta con la entidad Subjects.
               li 
                 i.fas.fa-check-circle.color1
-                span #[b date (date/time):] Fecha en la que se registró la calificación.
+                span #[b #[i date (date/time):]] Fecha en la que se registró la calificación.
               li 
                 i.fas.fa-check-circle.color1
-                span #[b mark (integer):] La calificación obtenida por el estudiante en la asignatura específica. 
+                span #[b #[i mark (integer):]] La calificación obtenida por el estudiante en la asignatura específica. 
           div(titulo="<i>Students</i> (Estudiantes)")
             ul.lista-ul.fa-ul
               li 
                 i.fas.fa-check-circle.color1
-                span #[b student id (integer):] identificador único del estudiante.
+                span #[b #[i student id (integer):]] identificador único del estudiante.
               li 
                 i.fas.fa-check-circle.color1
-                span #[b first name (varchar):] primer nombre del estudiante.
+                span #[b #[i first name (varchar):]] primer nombre del estudiante.
               li 
                 i.fas.fa-check-circle.color1
-                span #[b last name (varchar):] apellido del estudiante.
+                span #[b #[i last name (varchar):]] apellido del estudiante.
               li 
                 i.fas.fa-check-circle.color1
-                span #[b group id (integer):] referencia al grupo al que pertenece el estudiante, se conecta con la entidad Groups.
+                span #[b #[i group id (integer):]] referencia al grupo al que pertenece el estudiante, se conecta con la entidad Groups.
           div(titulo="<i>Groups </i> (Grupos)")
             ul.lista-ul.fa-ul
               li 
                 i.fas.fa-check-circle.color1
-                span #[b group id (integer):] identificador único del grupo.
+                span #[b #[i group id (integer):]] identificador único del grupo.
               li 
                 i.fas.fa-check-circle.color1
-                span #[b name (varchar):] nombre o designación del grupo (por ejemplo, Grupo A, Grupo B).
+                span #[b #[i name (varchar):]] nombre o designación del grupo (por ejemplo, Grupo A, Grupo B).
           div(titulo="<i>Subjects</i> (Asignaturas)")
             ul.lista-ul.fa-ul
               li 
                 i.fas.fa-check-circle.color1
-                span #[b group id (integer):] identificador único del grupo.
+                span #[b #[i group id (integer):]] identificador único del grupo.
               li 
                 i.fas.fa-check-circle.color1
-                span #[b name (varchar):] nombre o designación del grupo (por ejemplo, Grupo A, Grupo B).
+                span #[b #[i name (varchar):]] nombre o designación del grupo (por ejemplo, Grupo A, Grupo B).
           div(titulo="<i>Teachers</i> (Profesores)")
             ul.lista-ul.fa-ul
               li 
                 i.fas.fa-check-circle.color1
-                span #[b teacher id (integer):] identificador único del profesor.
+                span #[b #[i teacher id (integer):]] identificador único del profesor.
               li 
                 i.fas.fa-check-circle.color1
-                span #[b first name (varchar):] primer nombre del profesor.
+                span #[b #[i first name (varchar):]] primer nombre del profesor.
               li 
                 i.fas.fa-check-circle.color1
-                span #[b last name (varchar):] apellido del profesor.
+                span #[b #[i last name (varchar):]] apellido del profesor.
           div(titulo="<i>Subject/teacher</i> (Asignatura/Profesor)")
             ul.lista-ul.fa-ul
               li 
                 i.fas.fa-check-circle.color1
-                span #[b subject id (integer):] referencia a la asignatura impartida, se conecta con Subjects.
+                span #[b #[i subject id (integer):]] referencia a la asignatura impartida, se conecta con Subjects.
               li 
                 i.fas.fa-check-circle.color1
-                span #[b teacher id (integer):] referencia al profesor que enseña la asignatura, se conecta con Teachers.
+                span #[b #[i teacher id (integer):]] referencia al profesor que enseña la asignatura, se conecta con Teachers.
               li 
                 i.fas.fa-check-circle.color1
-                span #[b group id (integer):] referencia al grupo al que se le imparte la asignatura, se conecta con Groups.
+                span #[b #[i group id (integer):]] referencia al grupo al que se le imparte la asignatura, se conecta con Groups.
     h5.mb-4 Relaciones
     .row.justify-content-center.mb-4   
       .col-lg-7.my-lg-0.my-3

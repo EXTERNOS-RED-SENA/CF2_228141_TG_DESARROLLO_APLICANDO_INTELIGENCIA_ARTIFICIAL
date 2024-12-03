@@ -47,7 +47,8 @@
     Separador 
     #t_3_2.titulo-segundo.color-acento-contenido
       h2 3.2	Estructuras de datos en JSON y XML
-    p El análisis de las relaciones y las cardinalidades entre tablas es fundamental para diseñar un esquema de datos efectivo.
+    p Los formatos JSON y XML se utilizan ampliamente en bases de datos no relacionales para almacenar y transportar datos.
+
     .row.justify-content-start.my-4
       .col-auto
         h5.py-2.px-3.bgt1.brad JSON (JavaScript Object Notation)

@@ -57,19 +57,19 @@
             ul.lista-ul.fa-ul
               li 
                 i.fas.fa-check-circle.color1
-                span #[b #[i mark id (integer):]] Identificador único para cada registro de calificación.
+                span #[b #[i mark id (integer):]] identificador único para cada registro de calificación.
               li 
                 i.fas.fa-check-circle.color1
-                span #[b #[i student id (integer):]] Referencia al estudiante que recibió la calificación, se conecta con la entidad Students.
+                span #[b #[i student id (integer):]] referencia al estudiante que recibió la calificación, se conecta con la entidad Students.
               li 
                 i.fas.fa-check-circle.color1
-                span #[b #[i subject id (integer):]] Referencia a la asignatura evaluada, se conecta con la entidad Subjects.
+                span #[b #[i subject id (integer):]] referencia a la asignatura evaluada, se conecta con la entidad #[em Subjects].
               li 
                 i.fas.fa-check-circle.color1
-                span #[b #[i date (date/time):]] Fecha en la que se registró la calificación.
+                span #[b #[i date (date/time):]] fecha en la que se registró la calificación.
               li 
                 i.fas.fa-check-circle.color1
-                span #[b #[i mark (integer):]] La calificación obtenida por el estudiante en la asignatura específica. 
+                span #[b #[i mark (integer):]] la calificación obtenida por el estudiante en la asignatura específica. 
           div(titulo="<i>Students</i> (Estudiantes)")
             ul.lista-ul.fa-ul
               li 
@@ -83,7 +83,7 @@
                 span #[b #[i last name (varchar):]] apellido del estudiante.
               li 
                 i.fas.fa-check-circle.color1
-                span #[b #[i group id (integer):]] referencia al grupo al que pertenece el estudiante, se conecta con la entidad Groups.
+                span #[b #[i group id (integer):]] referencia al grupo al que pertenece el estudiante, se conecta con la entidad #[em Groups.]
           div(titulo="<i>Groups </i> (Grupos)")
             ul.lista-ul.fa-ul
               li 
@@ -115,13 +115,13 @@
             ul.lista-ul.fa-ul
               li 
                 i.fas.fa-check-circle.color1
-                span #[b #[i subject id (integer):]] referencia a la asignatura impartida, se conecta con Subjects.
+                span #[b #[i subject id (integer):]] referencia a la asignatura impartida, se conecta con #[em Subjects].
               li 
                 i.fas.fa-check-circle.color1
-                span #[b #[i teacher id (integer):]] referencia al profesor que enseña la asignatura, se conecta con Teachers.
+                span #[b #[i teacher id (integer):]] referencia al profesor que enseña la asignatura, se conecta con #[em Teachers.]
               li 
                 i.fas.fa-check-circle.color1
-                span #[b #[i group id (integer):]] referencia al grupo al que se le imparte la asignatura, se conecta con Groups.
+                span #[b #[i group id (integer):]] referencia al grupo al que se le imparte la asignatura, se conecta con #[em Groups.]
     h5.mb-4 Relaciones
     .row.justify-content-center.mb-4   
       .col-lg-7.my-lg-0.my-3
@@ -130,27 +130,27 @@
             ul.mb-0.lista-ul.fa-ul
               li.mb-0 
                 i.fas.fa-check-circle.color1
-                span.mb-0 #[b Relación entre Marks y Students:] la entidad Marks tiene un atributo student id que se conecta con student id en Students. Esto significa que cada calificación está asociada a un estudiante específico. 
+                span.mb-0 #[b Relación entre #[em Marks] y #[em Students]:] la entidad #[em Marks] tiene un atributo student id que se conecta con #[em student] id en #[em Students]. Esto significa que cada calificación está asociada a un estudiante específico. 
           .bgw.brad.p-3.j1.mb-3
             ul.mb-0.lista-ul.fa-ul
               li.mb-0 
                 i.fas.fa-check-circle.color1
-                span.mb-0 #[b Relación entre Marks y Subjects:] la entidad Marks se conecta con Subjects a través del subject id. Cada calificación pertenece a una asignatura específica. 
+                span.mb-0 #[b Relación entre #[em Marks] y #[em Subjects]:] la entidad Marks se conecta con #[em Subjects] a través del subject id. Cada calificación pertenece a una asignatura específica. 
           .bgw.brad.p-3.j1.mb-3
             ul.mb-0.lista-ul.fa-ul
               li.mb-0 
                 i.fas.fa-check-circle.color1
-                span.mb-0 #[b Relación entre Students y Groups:] la entidad Students tiene un atributo group id que se conecta con Groups, indicando el grupo al que pertenece el estudiante.
+                span.mb-0 #[b Relación entre #[em Students] y #[em Groups]:] la entidad #[em Students] tiene un atributo #[em group] id que se conecta con #[em Groups], indicando el grupo al que pertenece el estudiante.
           .bgw.brad.p-3.j1.mb-3
             ul.mb-0.lista-ul.fa-ul
               li.mb-0 
                 i.fas.fa-check-circle.color1
-                span.mb-0 #[b Relación entre Subject/teacher y Subjects, Teachers y Groups:] la entidad Subject/teacher actúa como una entidad de unión que relaciona asignaturas con profesores y grupos. Esto permite indicar qué profesor imparte qué asignatura a cuál grupo.
+                span.mb-0 #[b Relación entre #[em Subject/teacher] y #[em Subjects], #[em Teachers] y #[em Groups]:] la entidad #[em Subject/teacher] actúa como una entidad de unión que relaciona asignaturas con profesores y grupos. Esto permite indicar qué profesor imparte qué asignatura a cuál grupo.
           .bgw.brad.p-3.j1
             ul.mb-0.lista-ul.fa-ul
               li.mb-0 
                 i.fas.fa-check-circle.color1
-                span.mb-0 #[b Relación entre Teachers y Subject/teacher:] la entidad Teachers se conecta con Subject/teacher a través del teacher id, especificando qué profesor enseña una asignatura específica a un grupo.                 
+                span.mb-0 #[b Relación entre #[em Teachers] y #[em Subject/teacher]:] la entidad #[em Teachers] se conecta con #[em Subject/teacher] a través del #[em teacher] id, especificando qué profesor enseña una asignatura específica a un grupo.                 
 
       .col-lg-5.my-lg-0.my-3.j1
         img.img-a.img-t(src='@/assets/curso/temas/53.png' alt='')  

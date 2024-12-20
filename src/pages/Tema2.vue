@@ -99,7 +99,7 @@
             tbody
               tr
                 td
-                  img.img-a.img-t(src='@/assets/curso/temas/25.svg' alt='') 
+                  img.img-a.img-t(src='@/assets/curso/temas/25.svg' alt='La Tabla 1 se denomina «Tipos de relaciones» y presenta un ejemplo para cada relación:  uno a uno, uno a muchos, muchos a muchos, explicando las características de cada una.') 
                   br
                   br
                   ul.lista-ul.fa-ul
@@ -114,7 +114,7 @@
                       span Se usa para datos únicos y exclusivos                   
 
                 td
-                  img.img-a.img-t(src='@/assets/curso/temas/26.svg' alt='')
+                  img.img-a.img-t(src='@/assets/curso/temas/26.svg' alt='La Tabla 1 se denomina «Tipos de relaciones» y presenta un ejemplo para cada relación:  uno a uno, uno a muchos, muchos a muchos, explicando las características de cada una.')
                   br
                   br 
                   ul.lista-ul.fa-ul
@@ -129,7 +129,7 @@
                       span Es el tipo de relación más común                   
 
                 td
-                  img.img-a.img-t(src='@/assets/curso/temas/27.svg' alt='')
+                  img.img-a.img-t(src='@/assets/curso/temas/27.svg' alt='La Tabla 1 se denomina «Tipos de relaciones» y presenta un ejemplo para cada relación:  uno a uno, uno a muchos, muchos a muchos, explicando las características de cada una.')
                   br
                   br 
                   ul.lista-ul.fa-ul

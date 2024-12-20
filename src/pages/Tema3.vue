@@ -51,14 +51,31 @@
 
     .row.justify-content-start.my-4
       .col-auto
-        h5.py-2.px-3.bgt1.brad JSON (JavaScript Object Notation)
+        h5.py-2.px-3.bgt1.brad JSON (JavaScript #[em Object Notation])
 
     .row.justify-content-center.mb-4   
       .col-lg-8.my-lg-0.my-3
         p Es un formato ligero que representa datos como objetos clave-valor, lo que lo hace fácil de leer y escribir para humanos y máquinas. Se usa comúnmente en aplicaciones web y servicios RESTful. 
 
-        p #[b Ejemplo:] Un documento JSON que describe un producto puede contener campos como:               
-        img.img-a.img-t(src='@/assets/curso/temas/35.png' alt='')                          
+        p #[b Ejemplo:] Un documento JSON que describe un producto puede contener campos como:
+        .row.justify-content-center.mb-5
+          .col-lg-8  
+            .p-4(style="background-color: #cfe1fa ")      
+              code {
+                br
+                | "id":101, 
+                br
+                | "nombre":"Camiseta deportiva", 
+                br
+                | "precio":25.99,
+                br
+                | "tallas":["S","M", "L", "XL"], 
+                br
+                | "en_stock": true
+                br
+                | }
+      
+        //- img.img-a.img-t(src='@/assets/curso/temas/35.png' alt='')                          
 
       .col-lg-4.my-lg-0.my-3.j1
         img.img-a.img-t(src='@/assets/curso/temas/36.png' alt='')                          
@@ -71,15 +88,48 @@
       .col-lg-8.my-lg-0.my-3
         .row.justify-content-start.my-4
           .col-auto
-            h5.py-2.px-3.bgt1.brad XML (eXtensible Markup Language)   
+            h5.py-2.px-3.bgt1.brad XML (#[em Extensible Markup Language])   
         p Es un formato más estructurado que utiliza etiquetas para definir elementos y se emplea en aplicaciones que requieren validación y estructura más rígida. 
 
 
         p #[b Ejemplo:] un archivo XML para un pedido podría verse así:
-            
-        img.img-a.img-t.mb-4(src='@/assets/curso/temas/39.png' alt='')                          
+        .row.justify-content-center.mb-5
+          .col-lg-8
+            .p-4(style="background-color: #cfe1fa ") 
+                pre
+                  code 
+                      br
+                      |&lt;pedido&gt;
+                      br
+                      | &lt;id&gt;12345&lt;/id&gt;
+                      br
+                      | &lt;cliente&gt;Juan Pérez&lt;/cliente&gt;
+                      br
+                      | &lt;productos&gt;
+                      br
+                      |   &lt;producto&gt;
+                      br
+                      |     &lt;nombre&gt;Portátil&lt;/nombre&gt;
+                      br
+                      |     &lt;precio&gt;750.00&lt;/precio&gt;
+                      br
+                      |   &lt;/producto&gt;
+                      br
+                      | &lt;producto&gt;
+                      br
+                      |   &lt;nombre&gt;Ratón inalámbrico&lt;/nombre&gt;
+                      br
+                      |   &lt;precio&gt;25.50&lt;/precio&gt;
+                      br
+                      |&lt;/producto&gt;
+                      br
+                      |&lt;/productos&gt;
+                      br
+                      |   &lt;/pedido&gt;
+
+        //- img.img-a.img-t.mb-4(src='@/assets/curso/temas/39.png' alt='')                          
         p XML es útil en sistemas para la interoperabilidad entre distintas plataformas.
-         
+
     .row.justify-content-center 
       .col-lg-10
         .row.justify-content-center.bg13.text-white.p-4.brad
